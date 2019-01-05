@@ -13,8 +13,8 @@
 
 <table id="myTable">
   <tr class="header">
-    <th><input type="text" id="0" onkeyup="myDataFilterFunction(this.id)" placeholder="Column Value">
-    </th><th><input type="text" id="1" onkeyup="myDataFilterFunction(this.id)" placeholder="Column Value">
+    <th><input type="text" id="0" onkeyup="myFilterFunction(this.id)" placeholder="Column Value">
+    </th><th><input type="text" id="1" onkeyup="myFilterFunction(this.id)" placeholder="Column Value">
   </th></tr>
   <tr>
     <td>Alfreds Futterkiste</td>
@@ -51,7 +51,7 @@
 </table>
 
 <script>
-function myFunction(myid) {
+function myFilterFunction(myid) {
   var input, filter, table, tr, td, i, txtValue;
   input = document.getElementById(myid);
   filter = input.value.toUpperCase();  
